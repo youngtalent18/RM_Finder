@@ -1,7 +1,7 @@
 import Message from "../models/message.js";
 
 // GET ALL MESSAGES
-export const getAllMessages = async (req, res) => {
+export const getAllMessages = async (_, res) => {
   try {
 
     const messages = await Message.find()
