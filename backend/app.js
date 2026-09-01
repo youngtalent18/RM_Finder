@@ -45,7 +45,7 @@ app.use("/api/messages", messageRoute);
 app.use("/api/admin/messages", adminMessageRoute);
 app.use("/api/listings", listingRoute);
 
-app.get("/api/health", (req, res) => {
+app.get("/api/health", (_, res) => {
   res.status(200).json({ status: "ok", message: "Welcome to Roommate finder API" });
 });
 
