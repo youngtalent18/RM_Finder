@@ -49,7 +49,6 @@ function LoadingScreen() {
   );
 }
 
-
 // ADMIN ROUTE
 function AdminRoute({ children }) {
 
