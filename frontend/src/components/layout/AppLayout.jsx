@@ -40,7 +40,7 @@ const AppLayout = ({ children }) => {
           bottom-0
           w-72
           bg-white
-          z-[60]
+          z-60
           shadow-2xl
           lg:hidden
           transform

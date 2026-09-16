@@ -280,7 +280,6 @@ const Preferrences = () => {
         sleepHours: formData.sleepHours,
       };
 
-      // Your Zustand updatePreference only accepts data
       await updatePreference(data);
 
       toast.success("Preferences updated successfully");
@@ -296,9 +295,7 @@ const Preferrences = () => {
     }
   };
 
-  // ==========================================
   // DELETE PREFERENCE
-  // ==========================================
   const handleDelete = async () => {
     const confirmed = window.confirm(
       "Are you sure you want to delete your preferences?"
@@ -322,9 +319,7 @@ const Preferrences = () => {
     }
   };
 
-  // ==========================================
   // LOADING
-  // ==========================================
   if (loading && !preference && !showForm) {
     return (
       <AppLayout>
@@ -381,9 +376,8 @@ const Preferrences = () => {
 
       <div className="p-4 md:p-6 max-w-7xl mx-auto">
 
-        {/* ==========================================
-            HEADER
-        ========================================== */}
+        {/* 
+            HEADER */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 px-2 md:px-6">
 
           <div>
